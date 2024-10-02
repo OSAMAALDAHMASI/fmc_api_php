@@ -1,0 +1,19 @@
+{
+    "name": "osama/last-api",
+    "type": "project",
+    "require": {
+        "google/apiclient": "^2.17"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Osama\\LastApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "osama",
+            "email": "osamaqahtann@gmail.com"
+        }
+    ]
+}
