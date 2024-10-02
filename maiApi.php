@@ -38,11 +38,18 @@ function sendMessage($accessToken, $projectId, $message)
 $serviceAccountPath = 'course-notification2024-07a7c875c923.json'; // قم بتعديل المسار
 $projectId = 'course-notification2024'; // قم بتعديل معرف المشروع
 $message = [
-    'token' => 'csxj6sseQS2LYju1yeR0Hk:APA91bF-ANIeMacONdSNtdxdTgRBbiJ5f7nwMRuywxvpB08pALWS5X08_8gaijmj6daHNvypU8OCfImYfTqc8vRe9RuXhgqS4PJnrJ5Gsv-Qlb1vVu4Y1IoD2_T4WSvCYH3WhHhDdnx9', // قم بتعديل رمز الجهاز
+    // 'token' => 'csxj6sseQS2LYju1yeR0Hk:APA91bF-ANIeMacONdSNtdxdTgRBbiJ5f7nwMRuywxvpB08pALWS5X08_8gaijmj6daHNvypU8OCfImYfTqc8vRe9RuXhgqS4PJnrJ5Gsv-Qlb1vVu4Y1IoD2_T4WSvCYH3WhHhDdnx9', // قم بتعديل رمز الجهاز
+    'topic' => 'all',
     'notification' => [
         'title' => 'Hello',
         'body' => 'World',
     ],
+    "android" => [
+        "notification" => [
+            "channel_id" => "channel_id",
+            "sound" => "long_notification_sound"
+        ]
+    ]
 ];
 
 try {
